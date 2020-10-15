@@ -10,7 +10,7 @@ const pool = new Pool({
 
 const getEmails = async () => {
   return await new Promise(function (resolve, reject) {
-    pool.query("SELECT * from emails ORDER BY id ASC", (err, res) => {
+    pool.query("SELECT * from emails ORDER BY senddate ASC", (err, res) => {
       if (err) {
         reject(err);
       }
