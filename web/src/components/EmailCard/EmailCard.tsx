@@ -8,7 +8,6 @@ export interface EmailCardProps {
   message: string;
   from: string;
   to?: string;
-  sendDate: string;
 }
 
 const EmailCard: React.FC<EmailCardProps> = ({
@@ -17,7 +16,6 @@ const EmailCard: React.FC<EmailCardProps> = ({
   id,
   to,
   message,
-  sendDate,
 }) => {
   return (
     <>
@@ -35,7 +33,6 @@ const EmailCard: React.FC<EmailCardProps> = ({
                 subject,
                 from,
                 to,
-                sendDate,
                 message,
               },
             }}

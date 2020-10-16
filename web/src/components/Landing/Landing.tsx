@@ -7,9 +7,8 @@ import { EmailList, HeaderLanding } from "./styles";
 interface EmailProps {
   subject: string;
   message: string;
-  emailfrom: string;
-  emailto: string;
-  senddate: string;
+  email_from: string;
+  email_to: string;
   id: number;
 }
 
@@ -31,16 +30,15 @@ const Landing = () => {
       <div className="animate__animated animate__fadeInUp">
         <EmailList>
           {emails.map(
-            ({ id, subject, emailfrom, emailto, message, senddate }) => {
+            ({ id, subject, message, email_from, email_to }) => {
               return (
                 <EmailCard
                   key={id}
                   subject={subject}
-                  from={emailfrom}
-                  to={emailto}
+                  from={email_from}
+                  to={email_to}
                   id={id}
                   message={message}
-                  sendDate={senddate}
                 />
               );
             }

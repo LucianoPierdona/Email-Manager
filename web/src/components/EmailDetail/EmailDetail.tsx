@@ -5,8 +5,9 @@ import { EmailContent, HeaderAndFooterEmail } from "./styles";
 
 const EmailDetail: React.FC = () => {
   const navigate = useLocation<EmailCardProps>();
-  const { id, sendDate, message, from, to, subject } = navigate.state;
+  const { id, message, from, to, subject } = navigate.state;
   console.log(id);
+
   return (
     <div className="animate__animated animate__fadeInUp">
       <HeaderAndFooterEmail>
@@ -23,7 +24,7 @@ const EmailDetail: React.FC = () => {
       </EmailContent>
       <HeaderAndFooterEmail>
         <p>
-          Enviado em <strong>{sendDate}</strong>
+          Enviado em <strong>carro</strong>
         </p>
         <a href={`mailto:${from}`}>Responder</a>
       </HeaderAndFooterEmail>
