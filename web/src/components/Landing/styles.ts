@@ -12,8 +12,13 @@ export const HeaderLanding = styled.div`
     font-size: 25px;
     color: #999;
   }
-  & p {
+  & .link {
+    text-decoration: none;
     color: #cf1b1f;
+    transition: color 0.2s;
+    &:hover {
+      color: #999;
+    }
   }
 `;
 

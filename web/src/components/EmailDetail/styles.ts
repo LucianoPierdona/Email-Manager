@@ -46,3 +46,25 @@ export const EmailContent = styled.div`
     ]margin-bottom: 25px;
   }
 `;
+
+export const MoreInformationContent = styled.div`
+  width: 70%;
+  margin: 30px auto;
+  & h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    color: #cf1b1f;
+    margin-bottom: 10px;
+  }
+  & a {
+    color: #cf1b1f;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+    &:hover {
+      color: #cf1b1f;
+      text-decoration: underline;
+    }
+  }
+`;

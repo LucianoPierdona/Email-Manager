@@ -5,18 +5,10 @@ import { EmailCardContent } from "./styles";
 export interface EmailCardProps {
   id: number;
   subject: string;
-  message: string;
   from: string;
-  to?: string;
 }
 
-const EmailCard: React.FC<EmailCardProps> = ({
-  subject,
-  from,
-  id,
-  to,
-  message,
-}) => {
+const EmailCard: React.FC<EmailCardProps> = ({ subject, from, id }) => {
   return (
     <>
       <EmailCardContent>
@@ -25,20 +17,7 @@ const EmailCard: React.FC<EmailCardProps> = ({
           <p>{from}</p>
         </div>
         <div>
-          <Link
-            to={{
-              pathname: `/email/${id}`,
-              state: {
-                id,
-                subject,
-                from,
-                to,
-                message,
-              },
-            }}
-          >
-            Ler email
-          </Link>
+          <Link to={`/email/${id}`}>Ler email</Link>
         </div>
       </EmailCardContent>
     </>

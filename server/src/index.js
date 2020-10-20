@@ -17,6 +17,15 @@ app.get("/", async (req, res) => {
   res.status(200);
 });
 
+app.get("/email/:id", async (req, res) => {
+  await email_model.getEmail(req.params.id).then(response => {
+    res.status(200).send(response);
+  }).catch(err => {
+    console.log(err);
+    res.status(500).send(err);
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });

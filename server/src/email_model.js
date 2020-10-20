@@ -1,3 +1,5 @@
+
+
 require('dotenv').config();
 const Pool = require("pg").Pool;
 
@@ -9,6 +11,17 @@ const pool = new Pool({
   port: process.env.PORT,
 });
 
+const getEmail = async (request) => {
+  return await new Promise(function (resolve, reject) {
+    const id = parseInt(request);
+    pool.query(`SELECT * from emails where id = ${id}`, (err, res) => {
+      if (err) {
+        reject(err);
+      }
+      resolve(res.rows);
+    })
+  });
+}
 const getEmails = async () => {
   return await new Promise(function (resolve, reject) {
     pool.query("SELECT * from emails order by id desc", (err, res) => {
@@ -25,6 +38,7 @@ getEmails().catch(err => {
 });
 
 module.exports = {
+  getEmail,
   getEmails,
 };
 
