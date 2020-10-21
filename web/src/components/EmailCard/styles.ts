@@ -10,23 +10,23 @@ export const EmailCardContent = styled.div`
   justify-content: space-between;
   align-items: center;
   & h3 {
-    color: #cf1b1f;
+    color: #cd0a0a;
     margin-bottom: 5px;
   }
   & p {
-    color: #999;
+    color: #eb8f8f;
   }
   & a {
-    background: #cf1b1f;
+    background: #cd0a0a;
     padding: 5px 7px;
-    color: #fff;
+    color: #f1f3de;
     text-decoration: none;
     border-radius: 7px;
     transition: background-color 0.2s;
     transition: box-shadow 0.2s;
     &:hover {
-      color: #cf1b1f;
-      background: #fff;
+      color: #cd0a0a;
+      background: #f1f3de;
       box-shadow: 0 -3px 8px rgba(207, 27, 31, 0.1),
         0 2px 2px rgba(207, 27, 31, 0.1), 0 4px 4px rgba(207, 27, 31, 0.1),
         0 8px 8px rgba(207, 27, 31, 0.1), 0 16px 16px rgba(207, 27, 31, 0.1);

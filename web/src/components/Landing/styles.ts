@@ -6,18 +6,23 @@ export const HeaderLanding = styled.div`
   padding: 15px 0px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px solid #999;
+  border-bottom: 0.5px solid #ec0101;
   align-items: center;
   & h1 {
     font-size: 25px;
-    color: #999;
+    color: #ec0101;
   }
   & .link {
     text-decoration: none;
-    color: #cf1b1f;
+    color: #cd0a0a;
     transition: color 0.2s;
+    cursor: pointer;
+    margin-left: 2px;
+    background: #fff;
+    border: 0;
+    font-size: 14px;
     &:hover {
-      color: #999;
+      color: #ec0101;
     }
   }
 `;
