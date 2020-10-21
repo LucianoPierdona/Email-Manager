@@ -1,5 +1,6 @@
 import Axios from "axios";
 
+// Set the base URL
 const api = Axios.create({
   baseURL: "http://192.168.10.53:4000",
 });

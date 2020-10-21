@@ -6,6 +6,7 @@ import EmailCard from "../EmailCard/EmailCard";
 import ExcelButtonDownload from "../ExcelButtonDownload/ExcelButtonDownload";
 import { EmailList, HeaderLanding } from "./styles";
 
+// Email Landing Props
 interface EmailLandingProps {
   subject: string;
   message: string;
@@ -14,9 +15,12 @@ interface EmailLandingProps {
   id: number;
 }
 
+// Initial Page
 const Landing = () => {
+  // List of emails
   const [emails, setEmails] = useState<EmailLandingProps[]>([]);
 
+  // Call the api to get all the emails
   useEffect(() => {
     api.get("/").then((res) => {
       setEmails(res.data);

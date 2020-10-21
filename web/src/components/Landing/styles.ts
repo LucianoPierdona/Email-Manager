@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styling for the landing page
 export const HeaderLanding = styled.div`
   width: 90%;
   margin: 0 auto;

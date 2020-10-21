@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Landing from "./components/Landing/Landing";
 import NavBar from "./components/NavBar/NavBar";
 
+// Declare all the routes of the application
 function Routes() {
   return (
     <BrowserRouter>

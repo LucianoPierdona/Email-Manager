@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styling for the Email Detail Page
 export const HeaderAndFooterEmail = styled.div`
   display: flex;
   justify-content: space-between;

@@ -3,19 +3,24 @@ import ReactExport from "react-export-excel";
 import api from "../../services/api";
 import { EmailProps } from "../EmailDetail/EmailDetail";
 
+// Excel Button Creator && Tables Creation
 const ExcelButtonDownload = () => {
+  // All the data
   const [data, setData] = useState<EmailProps[]>([]);
 
+  // Take the properties from the react-export-excel module
   const ExcelFile = ReactExport.ExcelFile;
   const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
   const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
 
+  // Take all the data from the database
   useEffect(() => {
     api.get("/").then((res) => {
       setData(res.data);
     });
   }, []);
 
+  // Create the Excel Structure
   return (
     <ExcelFile element={<button className="link">Download em XLSX</button>}>
       <ExcelSheet data={data} name="emails">

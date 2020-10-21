@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styling for the Email Card
 export const EmailCardContent = styled.div`
   padding: 20px 10px;
   background: #fff;

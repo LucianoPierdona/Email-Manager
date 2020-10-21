@@ -3,6 +3,7 @@
 require('dotenv').config();
 const Pool = require("pg").Pool;
 
+// Connection with the database
 const pool = new Pool({
   user: process.env.USER,
   host: process.env.HOST,
@@ -11,6 +12,7 @@ const pool = new Pool({
   port: process.env.PORT,
 });
 
+// Get a single email
 const getEmail = async (request) => {
   return await new Promise(function (resolve, reject) {
     const id = parseInt(request);
@@ -22,6 +24,8 @@ const getEmail = async (request) => {
     })
   });
 }
+
+// Get all the emails
 const getEmails = async () => {
   return await new Promise(function (resolve, reject) {
     pool.query("SELECT * from emails order by id desc", (err, res) => {

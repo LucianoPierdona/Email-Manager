@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { EmailCardContent } from "./styles";
 
+// Declaration of the props inside the card
 export interface EmailCardProps {
   id: number;
   subject: string;

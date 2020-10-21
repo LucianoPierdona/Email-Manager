@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styling for the Footer
 export const FooterStyle = styled.div`
   padding: 20px 0;
   display: flex;

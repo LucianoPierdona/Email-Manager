@@ -1,6 +1,7 @@
 import React from "react";
 import { FooterStyle } from "./styles";
 
+// Footer Of The Application
 const Footer = () => {
   return (
     <FooterStyle>

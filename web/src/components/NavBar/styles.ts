@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styling for the NavBar
 export const Header = styled.div`
   background: #f1f3de;
   width: 100%;

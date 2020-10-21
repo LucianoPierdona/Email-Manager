@@ -8,6 +8,7 @@ const port = 4000;
 app.use(cors());
 app.use(express.json());
 
+// Default route, return all the emails
 app.get("/", async (req, res) => {
   await email_model.getEmails().then(response => {
     res.status(200).send(response);
@@ -17,6 +18,7 @@ app.get("/", async (req, res) => {
   res.status(200);
 });
 
+// Route to return the specified Email with the current given ID
 app.get("/email/:id", async (req, res) => {
   await email_model.getEmail(req.params.id).then(response => {
     res.status(200).send(response);

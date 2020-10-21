@@ -8,10 +8,12 @@ import {
   MoreInformationContent,
 } from "./styles";
 
+// Declaring the Props from the route params
 interface ParamsProps {
   id: string;
 }
 
+// Declaring The Props from the database
 export interface EmailProps {
   id: number;
   name: string;
@@ -37,9 +39,13 @@ export interface EmailProps {
 }
 
 const EmailDetail = () => {
+  // Take the ID from the params
   const params = useParams<ParamsProps>();
+
+  // get the email
   const [email, setEmail] = useState<EmailProps[]>([]);
 
+  // Call the api and search for the specified email
   useEffect(() => {
     api.get(`/email/${params.id}`).then((res) => {
       setEmail(res.data);
@@ -204,24 +210,6 @@ const EmailDetail = () => {
           );
         }
       )}
-      {/* <HeaderAndFooterEmail>
-        <p>
-          de <strong>ignore</strong>
-        </p>
-        <p>
-          para <strong>ignore</strong>
-        </p>
-      </HeaderAndFooterEmail>
-      <EmailContent>
-        <h1>ignore</h1>
-        <p>ignore</p>
-      </EmailContent>
-      <HeaderAndFooterEmail>
-        <p>
-          Enviado em <strong>carro</strong>
-        </p>
-        <a>Responder</a>
-      </HeaderAndFooterEmail> */}
     </div>
   );
 };
