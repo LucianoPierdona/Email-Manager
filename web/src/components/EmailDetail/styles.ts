@@ -31,6 +31,11 @@ export const HeaderAndFooterEmail = styled.div`
       background: #f1f3de;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+  }
 `;
 
 export const EmailContent = styled.div`
@@ -44,7 +49,10 @@ export const EmailContent = styled.div`
   p {
     color: #eb8f8f;
     font-weight: 500;
-    ]margin-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 
@@ -67,5 +75,8 @@ export const MoreInformationContent = styled.div`
       color: #cd0a0a;
       text-decoration: underline;
     }
+  }
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
