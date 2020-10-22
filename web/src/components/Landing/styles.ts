@@ -30,7 +30,7 @@ export const HeaderLanding = styled.div`
       color: #ec0101;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     & div {
       display: flex;
       flex-direction: column;
@@ -45,7 +45,7 @@ export const EmailList = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     display: flex;
     flex-direction: column;
   }
@@ -85,7 +85,7 @@ export const FiltersBlock = styled.div`
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     & ul {
       display: flex;
       flex-direction: column;

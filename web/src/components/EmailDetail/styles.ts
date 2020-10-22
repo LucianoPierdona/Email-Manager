@@ -31,7 +31,7 @@ export const HeaderAndFooterEmail = styled.div`
       background: #f1f3de;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     flex-direction: column;
     width: 50%;
     text-align: center;
@@ -51,7 +51,7 @@ export const EmailContent = styled.div`
     font-weight: 500;
     margin-bottom: 25px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     text-align: center;
   }
 `;
@@ -76,7 +76,7 @@ export const MoreInformationContent = styled.div`
       text-decoration: underline;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     text-align: center;
   }
 `;
