@@ -15,6 +15,7 @@ interface EmailLandingProps {
   id: number;
 }
 
+// Filters Options
 const filtersSubject = [
   "COMERCIAL",
   "TRABALHE CONOSCO",

@@ -1,4 +1,5 @@
 # Email Manager
+
 ### Project where you can see a list of emails from a database, read them or download in 2 types, XLSX or CSV
 
 <p>
@@ -13,14 +14,17 @@
 
 # Usage Front-End
 
-First Install the components with 
+First Install the components with
+
 ```
 npm install
 # or
 yarn add
 
 ```
+
 Then run with
+
 ```
 npm start
 # or
@@ -31,6 +35,7 @@ yarn start
 # Usage Back-End
 
 First install the dependencies with
+
 ```
 npm install
 # or
@@ -38,6 +43,7 @@ yarn add
 ```
 
 Then run with
+
 ```
 npm run dev
 # or
@@ -46,4 +52,5 @@ yarn dev
 
 # Screenshots
 
-### Soon...
+<img src="./web/public/readme1.png" alt="initial page background">
+<img src="./web/public/readme2.png" alt="email card example">
